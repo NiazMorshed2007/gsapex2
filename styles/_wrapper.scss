@@ -1,0 +1,45 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  //   filter: blur(3px);
+  //   .img-wrapper {
+  //   .div {
+  //     width: 350px;
+  //     height: 200px;
+  img {
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 230px;
+    object-fit: cover;
+    // box-shadow: 0px 0px 30px;
+    // }
+  }
+  & > :nth-child(1) {
+    top: 35%;
+    left: 35%;
+    transform: rotate(-10deg);
+  }
+  & > :nth-child(2) {
+    top: 10%;
+    left: 70%;
+    transform: rotate(10deg);
+  }
+  & > :nth-child(3) {
+    bottom: 5%;
+    left: 4%;
+    transform: rotate(10deg);
+  }
+  & > :nth-child(4) {
+    bottom: 5%;
+    right: 4%;
+    transform: rotate(-10deg);
+  }
+  & > :nth-child(5) {
+    top: 4%;
+    left: 4%;
+    transform: rotate(10deg);
+    filter: blur(0px);
+  }
+}
